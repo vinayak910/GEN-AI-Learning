@@ -122,3 +122,54 @@ Also in 2020, OpenAI released a variant of the GPT model called ChatGPT, which w
 In 2021, Google released Bard, a conversational AI that is designed to help users complete tasks, such as planning a trip or finding a recipe, by providing personalized and contextually relevant information. Bard uses a combination of neural network models, including transformers, to understand the context of a conversation and provide relevant information.
 
 In summary, the concept of neural networks has been around for several decades, but it wasn't until the introduction of transformers in 2017 that large language models began to emerge. Large language models are neural network models that have been trained on a vast amount of text data, and are capable of generating human-like text based on a given prompt. BERT, GPT-2, BERT-2, GPT-3, ChatGPT, and Bard are all examples of large language models that have been developed over time, with each iteration building on the capabilities of the previous one. These models have been instrumental in advancing the field of NLP and have opened up new possibilities for applications in various industries such as customer service, education, and entertainment.
+
+
+
+
+
+Different Generative AI
+-------------------------
+
+refer to jupyter notebook
+
+1. GAN
+
+2. Variantional Autoencoders(VAE)
+
+autoencoders :
+- contains 2 neural networks ie encoders and decoders
+- the data feed to encoder is bring down to latent space(dimensionality reduction) with keeping features importance , and then decoders decode the image from features
+
+Variational :
+
+- contains 2 neural networks encoders and decoders
+- Encoder: Similar to traditional autoencoders, the encoder network in VAEs maps the input data to a latent space representation. However, instead of directly outputting a single point in the latent space, the encoder outputs parameters of a probability distribution (typically Gaussian) that describes the latent space.
+
+- Decoder: The decoder network in VAEs takes samples from the latent space distribution (represented by the parameters outputted by the encoder) and generates output data. This sampling process introduces stochasticity, allowing VAEs to generate diverse variations of output data.
+- useful in scenario like making a different drugs discovery
+
+3. Autoregressive models :
+
+- used in time series and sequence generation 
+- generate from predicting on its previous outputs
+- LLM models are based on these.
+
+
+
+refer to tree diagram
+
+
+Large language models : 
+-------------------------
+
+- large because trained on large data
+- language : because it generates contextually relevant content
+
+definition : 
+- powerful AI model that uses deep learning techniques based on neural networks to understand and generate human like text
+- they were trained to do only prediction of the next word. But how they are answering questions , machine translation and more 
+- When llms understand how to predict next word , then they are supervised fine tuned ie trained on large corpus of question and answers and other , hence the ability of answering question , machine translation etc.
+- Base model is fine tuned for different tasks and then you can also fine tune the already fined tuned model for your tasks. you can use platforms like hugging face etc.
+
+
+Note : GPT 4 has 10^12 parameters and humans have 10^14 parameters. (year by year we are covering the bridge)
