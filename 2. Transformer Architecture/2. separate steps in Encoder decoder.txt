@@ -1,0 +1,38 @@
+explain steps in encoder and steps in decoder separately with the flow of data
+
+
+**Encoder:**
+
+1. Input Embedding: The input sequence is first tokenized and embedded into a sequence of token embeddings using a learned embedding matrix.
+2. Positional Encoding: Positional encodings are added to the token embeddings to provide information about the position of each token in the sequence.
+3. Layer Normalization: The input embeddings are passed through a layer normalization layer to stabilize the training process.
+4. Self-Attention: The input embeddings are passed through a self-attention layer, which computes a weighted sum of all the tokens in the sequence to capture the context of each token.
+5. Feedforward Neural Network (FFNN): The output representations of each token are passed through an FFNN to capture more complex relationships between the tokens in the sequence.
+6. Residual Connection and Layer Normalization: The output of the FFNN is added to the input embeddings using a residual connection, and a layer normalization layer is applied.
+7. Repeat Steps 4-6 for each layer in the encoder: The output of each layer is passed as input to the next layer, allowing the encoder to progressively refine its representations of the input sequence.
+
+**Decoder:**
+
+1. Input Embedding: The input sequence is first tokenized and embedded into a sequence of token embeddings using a learned embedding matrix.
+2. Positional Encoding: Positional encodings are added to the token embeddings to provide information about the position of each token in the sequence.
+3. Masked Self-Attention: The input embeddings are passed through a masked self-attention layer, which computes a weighted sum of all the tokens in the sequence up to the current position, to capture the context of each token.
+4. Encoder-Decoder Attention: The output representations of the encoder are passed through an encoder-decoder attention layer, which computes a weighted sum of all the tokens in the encoder output to capture the relationships between the input and output sequences.
+5. Feedforward Neural Network (FFNN): The output representations of each token are passed through an FFNN to capture more complex relationships between the tokens in the sequence.
+6. Residual Connection and Layer Normalization: The output of the FFNN is added to the input embeddings using a residual connection, and a layer normalization layer is applied.
+7. Repeat Steps 3-6 for each layer in the decoder: The output of each layer is passed as input to the next layer, allowing the decoder to progressively refine its representations of the output sequence.
+
+**Flow of Data:**
+
+The input sequence is first tokenized and embedded into a sequence of token embeddings. Positional encodings are added to the token embeddings to provide information about the position of each token in the sequence.
+
+In the encoder, the input embeddings are passed through a series of self-attention, FFNN, residual connection, and layer normalization layers to generate contextual representations of the input sequence.
+
+In the decoder, the input embeddings are passed through a series of masked self-attention, encoder-decoder attention, FFNN, residual connection, and layer normalization layers to generate contextual representations of the output sequence.
+
+The output of the decoder is passed through a linear layer and a softmax layer to generate the final output sequence.
+
+Overall, the encoder captures the context of the input sequence, while the decoder generates the output sequence based on the context of the input sequence and the previous output tokens. The self-attention and encoder-decoder attention layers allow the model to capture the relationships between tokens in the input and output sequences, respectively.
+
+
+
+
