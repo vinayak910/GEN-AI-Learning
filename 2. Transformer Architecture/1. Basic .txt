@@ -1,0 +1,26 @@
+Understanding transformer architecture
+
+refer to jupyter notebook
+
+In the previous text notebook we talked about the encoder architecture , now we will discuss about 
+Decoder architecture
+---------------------
+
+refer to process in jupyter notebook for better understanding of decoders , some of the steps in process are explained below
+
+
+1. Input
+
+2. Token embedding : word will be represented as vectors
+3. Postitional encoding
+
+4.Multi head attention : 
+
+- the decoder uses a mechanism called "multi-head attention" to generate the output sequence. 
+- it contains multipe self attension . where each self attension will focus on different words of input text such as verbs , object etc.parallely . 
+
+Decoder Self Attension:
+
+The self attention will not only input sequence but also will be applied on already generated output.
+
+5. Neural network : after multi head attension , the data will be feeded to neural network. which will understand the complexity and patterns.
