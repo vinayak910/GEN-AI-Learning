@@ -1,0 +1,29 @@
+Training of GPT 3 in steps
+
+
+
+step 1 : Unsupervised learning 
+--------------------------------
+
+- the model is trained on data without explicit labels or annotations. The goal is to uncover patterns, structures, or relationships within the data without any guidance from external sources.
+
+Step 2 : Self Supervised learning
+------------------------------------
+
+-  the model generates its own supervisory signal from the input data. This means that instead of relying on external labels or annotations provided by humans
+
+Ex : The cat sat on ___ . predicting the last word mat.
+
+
+Step 3 : Fine tuning the model
+---------------------------------
+
+- These pre-trained models may not perform well on specific downstream tasks without further fine-tuning. 
+- Fine-tuning involves continuing the training process on a smaller, task-specific dataset with labeled data. 
+- The labeled data provides task-specific supervision to the model, allowing it to adapt to the specific task.
+
+The other type of learning is prompt based learning.
+
+
+The process of fine tuning is part of Transfer learning.
+transfer learning is a broader concept that includes fine-tuning, fine-tuning is a specific type of transfer learning where the pre-trained model is further trained on a smaller, task-specific dataset.
