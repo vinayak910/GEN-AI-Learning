@@ -1,0 +1,55 @@
+After unsupervised , self supervised , and fine tuning or prompt learning.
+the next learning is Instruct Gpt
+
+
+InstructGPT :
+
+technique developed by Open Ai to train LLM like GPT in generateing more accurate and appropriate outputs by incoporating human feedback and generate outputs expected by human.
+
+it includes reinforcement learning with human learning and ppo (proximal Policy Optimization)
+
+
+how Instruct GPT works?
+
+STEPs : 
+1. Supervised Fine tunining(SFT)
+2. Reward Model Training (RM)
+3. Reinforcement Learning Fine Tuning (RL)
+
+
+Understanding working of InstructGPT with example
+--------------------------------------------------
+
+Let's consider the scenario of teaching a pet to perform tricks, like fetching a ball.
+
+
+1. Supervised Fine tuning 
+
+- Initially, you demonstrate to your pet(model) how to fetch a ball. You show them how to chase the ball, pick it up with their mouth, and bring it back to you.
+- Your pet learns from these demonstrations and practices, gradually improving its ability to fetch the ball accurately
+
+- Under your supervision , you are bringing a change in the pet(model) behaviour
+
+
+2. Reward Model Training
+
+- Next, you ask a group of friends to observe your pet's fetching behavior and provide feedback on which attempts they prefer. Some attempts may be faster, more accurate, or more enthusiastic.
+- Based on this feedback, you develop a sense of which fetching behaviors are most desirable. You then train a reward model to predict which behaviors your friends would prefer in different situations
+
+- (introduction of human feedback and preference)
+
+
+3.Reinforcement Learning Fine-Tuning (RL):
+
+- Using the reward model, you further refine your pet's fetching behavior. 
+- You set up a system where your pet receives a treat or praise whenever it successfully fetches the ball in a preferred manner, according to the predictions of the reward model.
+- if it do not fetch the ball in preferred manner , we will give dog a penalty
+- Over time, your pet learns to adjust its fetching technique to maximize the rewards it receives. 
+- It becomes more consistent in its behavior and starts fetching the ball in a way that closely aligns with what humans prefer.
+
+
+refer to jupyter notebook to cover rest of the topics, which includes
+- GPT parameters and playground parameters such as Top P etc
+- transformers vs LLama
+etc
+
