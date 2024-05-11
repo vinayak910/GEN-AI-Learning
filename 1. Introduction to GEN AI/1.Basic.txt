@@ -11,7 +11,7 @@ Some tools
 
 - you.com - Provide gpt 4 for free
 - pi.ai - if you want to know the current scenario
-l- abs.perplexility.ai : provide the videos , links for a question you asked
+- abs.perplexility.ai : provide the videos , links for a question you asked
 - groq.com : when run llma2 on cpu ,it will be very slow. But this site uses then  uses lpu which makes the answer faster. It doesnt matter even if the model has 70 billion parameters
 - ollama.com : can download this locally , and can pull different llm into the system and chat with it.
 You can run ollama , by using this cmd in cmd prompt : ollama pull model_name.
